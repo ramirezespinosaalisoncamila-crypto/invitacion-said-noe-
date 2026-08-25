@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis XV Años – Said Noé</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #2b3a29;      /* Verde Olivo Profundo */
+      --bg-card: #3b4c39;      /* Verde Olivo Medio */
+      --accent-beige: #e6d7c3; /* Beige Elegante */
+      --accent-warm: #c5a880;  /* Café Claro / Oro */
+      --text-light: #f7f4ef;  /* Blanco Cálido */
+      --text-muted: #d0c5b4;  /* Beige Suave */
+      --dark-coffee: #1c1510; /* Café Oscuro */
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      line-height: 1.6;
+      padding: 20px 15px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      border: 2px solid var(--accent-beige);
+      padding: 30px 20px;
+      border-radius: 12px;
+      background-color: var(--bg-card);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Monograma SN */
+    .monogram-container {
+      margin: 10px auto 20px;
+      width: 90px;
+      height: 90px;
+      border: 2px solid var(--accent-beige);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: radial-gradient(circle, rgba(230,215,195,0.15) 0%, rgba(0,0,0,0) 70%);
+    }
+
+    .monogram-text {
+      font-family: 'Cinzel', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--accent-beige);
+      letter-spacing: 2px;
+    }
+
+    h1.title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.3rem;
+      color: var(--accent-beige);
+      margin-bottom: 5px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    h2.name {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      color: var(--accent-warm);
+      margin: 10px 0 20px;
+      font-weight: normal;
+    }
+
+    .quote {
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+      padding: 0 10px;
+    }
+
+    .card {
+      background-color: rgba(43, 58, 41, 0.6);
+      border: 1px solid var(--accent-warm);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-family: 'Cinzel', serif;
+      color: var(--accent-beige);
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      background-color: var(--accent-beige);
+      color: var(--dark-coffee);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 25px;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-warm);
+      color: #fff;
+    }
+
+    .footer-note {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 25px;
+      border-top: 1px solid rgba(230, 215, 195, 0.2);
+      padding-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Monograma SN -->
+    <div class="monogram-container">
+      <span class="monogram-text">SN</span>
+    </div>
+
+    <h1 class="title">Mis XV Años</h1>
+    <h2 class="name">Said Noé</h2>
+
+    <p class="quote">"Hay momentos en la vida que son inolvidables, pero compartirlos con quienes más queremos los hace eternos."</p>
+
+    <!-- Misa -->
+    <div class="card">
+      <h3>Misa de Acción de Gracias</h3>
+      <p><strong>Fecha:</strong> 29 de Mayo de 2027</p>
+      <p><strong>Hora:</strong> 4:30 PM</p>
+      <p><strong>Lugar:</strong> Parroquia de San Judas Tadeo</p>
+      <p>Bosques del Valle, Coacalco</p>
+      <a href="https://maps.google.com/?cid=5620665291763332349" target="_blank" class="btn"> Ver Ubicación de la Misa</a>
+    </div>
+
+    <!-- Recepción -->
+    <div class="card">
+      <h3>Recepción</h3>
+      <p><strong>Lugar:</strong> Salón Casa Blanca</p>
+      <p>Avenida Zarzaparrillas 6, Coacalco</p>
+      <p><strong>Código de Vestimenta:</strong> Traje Formal de Gala</p>
+    </div>
+
+    <!-- Confirmación -->
+    <div class="card">
+      <h3>Confirmación de Asistencia</h3>
+      <p>Favor de confirmar antes del 15 de Mayo de 2027.</p>
+      <a href="https://wa.me/524495385461?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20los%20XV%20Años%20de%20Said%20Noé." target="_blank" class="btn"> Confirmar por WhatsApp</a>
+    </div>
+
+    <div class="footer-note">
+      <p>¡Te esperamos para celebrar este día tan especial!</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
