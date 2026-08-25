@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV Años - Said Noe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #2b3a29;       /* Verde Olivo Profundo */
+            --bg-card: #3b4c39;       /* Verde Olivo Medio */
+            --accent-beige: #e6d7c3;  /* Beige Elegante */
+            --accent-warm: #c5a880;   /* Café Claro / Oro Viejo */
+            --text-light: #f7f4ef;    /* Blanco Cálido */
+            --text-muted: #d0c5b4;   /* Beige Suave para subtítulos */
+            --dark-coffee: #1c1510;   /* Café Oscuro para texto en botones */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: linear-gradient(180deg, #233021 0%, #354533 100%);
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
+            border-left: 1px solid rgba(230, 215, 195, 0.25);
+            border-right: 1px solid rgba(230, 215, 195, 0.25);
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(230, 215, 195, 0.35);
+            border-radius: 14px;
+            padding: 25px 15px;
+            margin-bottom: 25px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            position: relative;
+            clear: both;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--accent-beige);
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+            line-height: 1.3;
+        }
+
+        h1 { font-size: 1.8rem; }
+        h2 { font-size: 1.4rem; }
+
+        .subtitle-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent-warm);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .hero-quote {
+            font-style: italic;
+            color: var(--text-muted);
+            margin: 15px 0 0 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-warm), transparent);
+            margin: 15px 0;
+        }
+
+        /* Countdown */
+        .timer {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        .timer-box {
+            background: rgba(28, 38, 26, 0.85);
+            border: 1px solid var(--accent-warm);
+            padding: 10px;
+            border-radius: 8px;
+            min-width: 60px;
+        }
+        .timer-box span {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent-beige);
+        }
+        .timer-box label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        /* Buttons */
+        .btn {
+            display: block;
+            width: 85%;
+            margin: 15px auto 5px auto;
+            padding: 12px 0;
+            background: linear-gradient(45deg, #e6d7c3, #c5a880);
+            color: var(--dark-coffee);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+        .btn:active { transform: scale(0.98); }
+
+        p { line-height: 1.5; font-size: 0.95rem; margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- PORTADA SIN ENCINAMIENTOS -->
+    <div class="section">
+        <span class="subtitle-badge">Una Invitación Especial</span>
+        <h1>MIS XV AÑOS</h1>
+        <div class="divider"></div>
+        <h2 style="font-size: 2rem; color: #fff;">SAID NOE</h2>
+        <p class="hero-quote">
+            "Te invito a celebrar conmigo el inicio de una nueva etapa con la bendición de Dios y el apoyo de mi familia."
+        </p>
+    </div>
+
+    <!-- PADRES Y PADRINOS -->
+    <div class="section">
+        <h3>MIS PADRES</h3>
+        <p>Juan Carlos Ramirez Espinosa</p>
+        <p>Karina Raquel Vázquez Olvera</p>
+        
+        <div class="divider"></div>
+        
+        <h3>MIS PADRINOS</h3>
+        <p>Gabriel Espinoza</p>
+        <p>Liliana Mireles</p>
+    </div>
+
+    <!-- FECHA Y CUENTA REGRESIVA -->
+    <div class="section">
+        <h3>SAVE THE DATE</h3>
+        <p style="font-size: 1.2rem; font-weight: 600; color: #fff;">29 DE MAYO DE 2027</p>
+        <div class="divider"></div>
+        <div class="timer">
+            <div class="timer-box"><span id="days">00</span><label>Días</label></div>
+            <div class="timer-box"><span id="hours">00</span><label>Horas</label></div>
+            <div class="timer-box"><span id="minutes">00</span><label>Min</label></div>
+            <div class="timer-box"><span id="seconds">00</span><label>Seg</label></div>
+        </div>
+    </div>
+
+    <!-- MISA -->
+    <div class="section">
+        <h3>MISA DE ACCIÓN DE GRACIAS</h3>
+        <p><strong>Hora:</strong> 4:30 PM</p>
+        <p><strong>Lugar:</strong> Iglesia de San Judas Tadeo</p>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Bosques del Valle 2ª sección, Coacalco</p>
+        <a href="https://maps.google.com" target="_blank" class="btn">Ver Ubicación Misa</a>
+    </div>
+
+    <!-- RECEPCIÓN -->
+    <div class="section">
+        <h3>RECEPCIÓN</h3>
+        <p><strong>Lugar:</strong> Salón Casa Blanca Coacalco</p>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Avenida Zarzaparrillas 6, Villa de las Flores, Coacalco, Méx.</p>
+        <a href="https://maps.google.com/?q=Salon+Casa+Blanca+Coacalco" target="_blank" class="btn">Ver Ubicación Salón</a>
+    </div>
+
+    <!-- DRESS CODE -->
+    <div class="section">
+        <h3>DRESS CODE</h3>
+        <p><strong>Traje Formal / Gala</strong></p>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Nos encantará verte lucir elegante en esta noche especial.</p>
+    </div>
+
+    <!-- CONFIRMACIÓN (RSVP) DIRECTA A WHATSAPP -->
+    <div class="section" style="border-color: var(--accent-warm);">
+        <h3>CONFIRMAR ASISTENCIA</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Por favor confirma tu presencia antes del 15 de Mayo de 2027.</p>
+        <a href="https://api.whatsapp.com/send?phone=524495385461&text=%C2%A1Hola!%20Confirmo%20mi%20asistencia%20a%20los%20XV%20a%C3%B1os%20de%20Said%20Noe." target="_blank" class="btn">Confirmar por WhatsApp</a>
+    </div>
+
+</div>
+
+<script>
+    // Cuenta regresiva al 29 de Mayo de 2027
+    const eventDate = new Date("May 29, 2027 16:30:00").getTime();
+    setInterval(function() {
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+        
+        if (distance > 0) {
+            document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+            document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
